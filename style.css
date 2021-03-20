@@ -690,9 +690,12 @@ section{
     height: 100px;
     padding: 0;
     margin-bottom: 0;
+
 }
 .footer .footer-content{
     background: rgb(31, 30, 30);
+    margin: 0;
+    padding: 0;
     
 }
 .footer .footer-content .text{
