@@ -142,6 +142,7 @@ section{
 }
 .about{
     font-family: 'poppins', sans-serif;
+    background: rgb(31, 30, 30);
 }
 .about .title{
     position: relative;
@@ -151,6 +152,7 @@ section{
     font-weight: 500;
     padding-bottom: 20px;
     margin-bottom: 60px;
+    color: #fff;
 }
 .about .title::before{
     content: "";
@@ -159,7 +161,7 @@ section{
     left: 50%;
     height: 3px;
     width: 180px;
-    background: black;
+    background: #fff;
     transform: translateX(-50%);
 
 }
@@ -169,7 +171,7 @@ section{
     bottom: -13px;
     left: 50%;
     padding: 5px;
-    background: white;
+    background: rgb(31, 30, 30);
     color: #a0b2da;
     font-size: 20px;
     transform: translateX(-50%);
@@ -183,29 +185,31 @@ section{
     justify-content: space-between;
 }
 .about .about-content .left{
-    width: 45%;
-    
+    width: 30%;
+    /* padding-right: 30px; */
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
 .about .about-content .right{
-    width: 55%;
+    width: 70%;
+    /* margin-left: 50px; */
 }
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: white;
 }
 .about .about-content .right .text span{
     color: #a0b2da;
 }
-.about .about-content .right .text p{
+.about .about-content .right p{
     text-align: justify;
-   
+    color: #fff;
 }
 .about .about-content .right a{
     display: inline-block;
@@ -219,19 +223,17 @@ section{
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: black;
+    color: #fff;
     background: none;
 }
 
 
-/* styling service */
-
-.service{
+/* styling proyek */
+.proyek{
     font-family: 'poppins', sans-serif;
     background: rgb(31, 30, 30);
-    width: 100%;
 }
-.service .title{
+.proyek .title{
     position: relative;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -241,7 +243,7 @@ section{
     margin-bottom: 60px;
     color: white;
 }
-.service .title::before{
+.proyek .title::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -252,8 +254,8 @@ section{
     transform: translateX(-50%);
 
 }
-.service .title::after{
-    content: "What I Provide";
+.proyek .title::after{
+    content: "My Result";
     position: absolute;
     bottom: -13px;
     left: 50%;
@@ -262,77 +264,29 @@ section{
     color: #a0b2da;
     font-size: 20px;
     transform: translateX(-50%);
-
-
 }
-
-.service .service-content{
+.proyek .proyek-content{
     display: flex;
-    width: 100%;
+    justify-content: center;
+}
+.proyek .proyek-content .card1{
+    height: 200px;
+    width: 200px;
+    background: rgb(51, 50, 50);
+    border: 2px solid #a0b2da;
+    border-radius: 20px;
+    margin: 0 20px;
     text-align: center;
     color: white;
-    transition: all 0.3s ease;
-    align-items: center;
-    box-sizing: border-box;
+    font-size: 15px;
+    padding-top: 80px;
+    transition: 0.5s ease;
 }
-.service .service-content .colom1{
-    width: 500px;
-    background: rgb(40, 40, 40);
-    padding: 10px;
-    margin-right: 25px;
-    border-radius: 8px;
-    transition: all 0.5s ease;
-    display: inline-block;
+.proyek .proyek-content .card1:hover{
+    background: rgb(119, 115, 115);
+    transform: scale(1.2);
+    color: #a0b2da;
 }
-.service .service-content .colom1:hover{
-    transform: scale(1.05);
-    background-color: #a0b2da;
-}
-.service .service-content .colom1 h2{
-    padding: 10px;
-    font-size: 20px;
-}
-.service .service-content .colom1 p{
-    font-size: 16px;
-}
-.service .service-content .colom2{
-    width: 500px;
-    background: rgb(40, 40, 40);
-    padding: 10px;
-    margin-right: 25px;
-    border-radius: 8px;
-    transition: all 0.5s ease;
-}
-.service .service-content .colom2:hover{
-    transform: scale(1.05);
-    background-color: #a0b2da;
-}
-.service .service-content .colom2 h2{
-    padding: 10px;
-    font-size: 20px;
-}
-.service .service-content .colom2 p{
-    font-size: 16px;
-}
-.service .service-content .colom3{
-    width: 500px;
-    background: rgb(40, 40, 40);
-    padding: 10px;
-    border-radius: 8px;
-    transition: all 0.5s ease;
-}
-.service .service-content .colom3:hover{
-    transform: scale(1.05);
-    background-color: #a0b2da;
-}
-.service .service-content .colom3 h2{
-    padding: 10px;
-    font-size: 20px;
-}
-.service .service-content .colom3 p{
-    font-size: 16px;
-}
-
 /* skills styling start */
 .skils{
     font-family: 'poppins', sans-serif;
@@ -413,127 +367,18 @@ section{
 }
 .skils .skils-content .right{
     width: 50%;
-}
-.skils .skils-content .right .bars .info{
-    padding: 10px 0;
-}
-.skils .skils-content .right .bars .info span{
-    font-weight: 600;
-    
-}
-.skils .skils-content .right .bars .info .persen{
-    float: right;
-    margin-right: 0;
-    padding-right: 0;
-}
-.skils .skils-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skils .skils-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #a0b2da;
-}
-.skils .skils-content .right .html::before{
-    width: 90%;
-}
-.skils .skils-content .right .css::before{
-    width: 60%;
-}
-.skils .skils-content .right .js::before{
-    width: 10%;
-}
-.skils .skils-content .right .php::before{
-    width: 10%;
-}
-.skils .skils-content .right .sql::before{
-    width: 5%;
-}
-
-/* styling teams start */
-.teams{
-    font-family: 'poppins', sans-serif;
-    width: 100%;
-    background: rgb(31, 30, 30);
-}
-.teams .title{
-    position: relative;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    padding-bottom: 20px;
-    margin-bottom: 60px;
-    color: #fff;
-}
-.teams .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    height: 3px;
-    width: 180px;
-    background: #fff;
-    transform: translateX(-50%);
-
-}
-.teams .title::after{
-    content: "Who With Me";
-    position: absolute;
-    bottom: -13px;
-    left: 50%;
-    padding: 5px;
-    background: rgb(31, 30, 30);
-    color: #a0b2da;
-    font-size: 20px;
-    transform: translateX(-50%);
-}
-.teams .teams-content{
     display: flex;
-}
-.teams .teams-content .team img{
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    display: block;
-    margin: 20px auto 5px auto;
-    border: 8px solid #a0b2da;
-}
-.teams .teams-content .team:hover img{
-    border-color: #fff;
-    transition: all 0.3s ease;
-}
-
-.teams .teams-content .team{
-    width: 500px;
-    height: auto;
-    background: rgb(40, 40, 40);
-    margin: 0 15px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-.teams .teams-content .team:hover{
-    background: #a0b2da;
-    transform: scale(1.05);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     
 }
-.teams .teams-content .team h2{
-    color: white;
-    font-weight: 500;
-    text-align: center;
+.skils .skils-content .right .img img{
+    width: 70px;
+    height: 80px;
+    margin: 30px 50px;
 }
-.teams .teams-content .team p{
-    color: #fff;
-    font-size: 15px;
-    text-align: center;
-    margin: 10px 10px;
-}
+
 
 /* contact styling start */
 .contact{
@@ -681,19 +526,19 @@ section{
 }
 .contact .contact-content .right .button button:hover{
     background: none;
-    color: #a0b2da;
+    color: #000;
 }
 
 /* footer styling */
 .footer{
     width: 100%;
-    height: 100px;
+    height: 70px;
     padding: 0;
-    margin-bottom: 0;
-
+    /* margin-bottom:-50px; */
+    background: rgb(31, 30, 30);
 }
 .footer .footer-content{
-    background: rgb(31, 30, 30);
+    
     margin: 0;
     padding: 0;
     
@@ -724,7 +569,7 @@ section{
 }
 .footer .footer-content .icon a i{
     color: #fff;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     padding-right: 20px;
     transition: all 0.3s ease;
 }
@@ -1173,15 +1018,7 @@ section{
             margin-bottom: 20px;
             margin: 20px auto;
         }
-        .skils .skils-content .left .text{
-            font-size: 17px;
-        }
-        .skils .skils-content .left p{
-            font-size: 12px
-        }
-        .skils .skils-content .left a{
-            font-size: 12px;
-        }
+        
         .contact .contact-content{
             display: block;
         }
@@ -1301,20 +1138,23 @@ section{
         .about .about-content .right p{
             font-size: 12px;
         }
-        .service .title::after{
-            font-size: 18px;
-            padding: 5px;
+        .skils .skils-content .right{
+            display: inline;
             
-        
         }
-        .service .service-content .colom1 p{
-            font-size: 12px;
+        .skils .skils-content .right .img img{
+            width: 40px;
+            height: 40px;
+            /* display: flex;
+            flex-direction: row; */
         }
-        .service .service-content .colom2 p{
-            font-size: 12px;
+        .proyek .proyek-content{
+            flex-wrap: wrap;
         }
-        .service .service-content .colom3 p{
-            font-size: 12px;
+        .proyek .proyek-content .card1{
+            height: 130px;
+            width: 130px;
+            margin: 10px 8px;
         }
         .teams .teams-content .team h2{
             font-size: 18px;
@@ -1326,8 +1166,9 @@ section{
             margin-top: 0;
         }
         .teams .teams-content .team img{
-            
-            
+            width: 40px;
+            height: 50px;
+            display: inline-block;
             
         }
         
