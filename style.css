@@ -1139,22 +1139,23 @@ section{
             font-size: 12px;
         }
         .skils .skils-content .right{
-            display: inline;
-            
+            display: flex;
+            flex-direction: row;
         }
         .skils .skils-content .right .img img{
             width: 40px;
             height: 40px;
-            /* display: flex;
-            flex-direction: row; */
+            margin: 20px 20px 0 20px;
         }
         .proyek .proyek-content{
             flex-wrap: wrap;
         }
         .proyek .proyek-content .card1{
-            height: 130px;
-            width: 130px;
-            margin: 10px 8px;
+            height: 100px;
+            width: 100px;
+            margin-top: 10px;
+            padding-top: 30px;
+            font-size: 12px;
         }
         .teams .teams-content .team h2{
             font-size: 18px;
